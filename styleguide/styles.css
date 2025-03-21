@@ -1,0 +1,86 @@
+section {
+  border: 1px solid black;
+  margin-bottom: 20px;
+  width: 1000px;
+}
+
+#colours {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#colours div {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.title {
+  margin-left: 10px;
+}
+
+.colourbox {
+  text-align: center;
+  width: 30%;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+#lightblue {
+  background-color: rgba(173, 245, 247, 1);
+}
+
+#grey {
+  background-color: rgba(116, 130, 130, 1);
+}
+
+#cream {
+  background-color: rgba(224, 218, 184, 1);
+}
+
+.roboto {
+  font-family: 'Roboto', serif;
+}
+
+.opensans {
+  font-family: 'Open Sans', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italics {
+  font-style: italic;
+}
+
+#textstyles .h1 {
+  font-family: 'Montserrat', serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+#textstyles .h2 {
+  font-family: 'Roboto', serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#textstyles .p {
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#fonts {
+  display: flex;
+}
+
+#fonts div {
+  border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+}
+
+#table-head {
+  background-color: lightgray;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.selector {
+  background-color: lightskyblue;
+  font-weight: 600;
+}
+
+.monospace {
+  font-family: 'Lucida Console', Courier, monospace;
+  background-color: black;
+  color: greenyellow;
+  border: 1px solid white;
+}

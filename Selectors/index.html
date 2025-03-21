@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Explained</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <table>
+      <tr id="table-head">
+        <td>Name</td>
+        <td>Appearance</td>
+        <td>Example</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td class="selector">HTML Element</td>
+        <td class="monospace">&lt;p&gt;Paragraph&lt;/p&gt;</td>
+        <td class="monospace">p &lcub; &rcub;</td>
+        <td>Selects all &lt;p&gt; elements</td>
+      </tr>
+      <tr>
+        <td class="selector">id</td>
+        <td class="monospace">&lt;p id="specificname"&gt;Unique&lt;/p&gt;</td>
+        <td class="monospace">#specificname &lcub; &rcub;</td>
+        <td>Selects an element with the id 'specificname'. Must be unique</td>
+      </tr>
+      <tr>
+        <td class="selector">class</td>
+        <td class="monospace">
+          &lt;img class="portrait" src="george.jpg" alt="portrait of george"&gt;
+        </td>
+        <td class="monospace">.portrait &lcub; &rcub;</td>
+        <td>Selects all elements with the class 'portrait'</td>
+      </tr>
+      <tr>
+        <td class="selector">attribute</td>
+        <td class="monospace">
+          &lt;a href="google.com"&gt;Visit Google&lt;&gt;
+        </td>
+        <td class="monospace">[href] &lcub; &rcub;</td>
+        <td>Selects all elements with an href attribute</td>
+      </tr>
+      <tr>
+        <td class="selector">attribute value</td>
+        <td class="monospace">
+          &lt;a
+          href="https://en.wikipedia.org/wiki/The_Third_of_May_1808"&gt;Interesting
+          Wikipedia article&lt;&gt;
+        </td>
+        <td class="monospace">[href*="wikipedia"] &lcub; &rcub;</td>
+        <td>
+          Selects all elements with a href attribute containing 'wikipedia'
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
