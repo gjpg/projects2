@@ -7,6 +7,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main {
@@ -28,7 +29,7 @@ header {
   align-items: center;
   border: 1px black solid;
   padding: 0;
-  width: auto;
+  width: 70%;
 }
 header h1 {
   margin-left: 1rem;
@@ -51,7 +52,7 @@ footer {
   justify-content: space-between; /* Pushes <p> left, <ul> right */
   align-items: center; /* Vertically centers content */
   border: 1px solid black;
-  width: auto;
+  width: 70%;
 }
 
 #contact {
@@ -69,4 +70,46 @@ footer {
 
 footer p {
   margin-right: 1rem; /* Removes default paragraph margin */
+}
+
+main {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+section {
+  width: 50%;
+  border: 1px black solid;
+  margin: 0;
+  padding: 1rem;
+  max-height: none;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  /* Remove overflow-y: auto (no scrolling) */
+  overflow-wrap: break-word; /* Prevents horizontal overflow */
+}
+
+/* Add responsive text scaling */
+section p {
+  font-size: clamp(0.8rem, 1.5vw, 1rem); /* Scales between 0.9rem-1rem */
+  margin: 0; /* Removes default paragraph margins */
+}
+#portrait {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  clip-path: circle(50%);
+  object-fit: contain;
+  object-position: 50% 7rem;
+  margin-top: -7rem;
+}
+
+/* Tablet styles (typically 768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Add your tablet-specific styles here */
+}
+
+/* Mobile styles (typically up to 767px) */
+@media screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
 }
