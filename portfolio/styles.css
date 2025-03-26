@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Your existing styles below */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  padding: 0;
+  width: auto;
+}
+header h1 {
+  margin-left: 1rem;
+}
+
+nav li {
+  gap: 1rem; /* Modern way to space items */
+  padding: 0;
+  margin-left: 1rem;
+}
+nav ul {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  margin-right: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between; /* Pushes <p> left, <ul> right */
+  align-items: center; /* Vertically centers content */
+  border: 1px solid black;
+  width: auto;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  gap: 0.5rem; /* Adds space between items */
+  padding: 0; /* Removes default <ul> padding */
+  margin-left: 1rem;
+  text-align: left; /* Aligns text to the right */
+}
+
+#contact li {
+  list-style: none; /* Removes bullets */
+}
+
+footer p {
+  margin-right: 1rem; /* Removes default paragraph margin */
+}
