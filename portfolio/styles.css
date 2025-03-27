@@ -104,6 +104,42 @@ section p {
   margin-top: -7rem;
 }
 
+#projects {
+  display: inline-flex;
+  justify-content: space-between;
+}
+#project-img-container {
+  width: 40%;
+  background-color: lightblue;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#project-img-container img {
+  width: 80%;
+}
+
+#project-list li {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+#project-list li:hover,
+#project-list li.active {
+  text-decoration: underline;
+  background-color: lightblue;
+}
+
+#project-img-container img {
+  width: 80%;
+  display: none;
+}
+
+#project-img-container img:first-child {
+  display: block; /* Show first image by default */
+}
 /* Tablet styles (typically 768px - 1024px) */
 @media screen and (max-width: 1024px) {
   /* Add your tablet-specific styles here */

@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -56,13 +57,22 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>Workout Timer</li>
-          <li>Boxes</li>
-          <li>Dwarf Fortress yield calculator</li>
-          <li>Football Scores</li>
-        </ul>
+        <div id="project-text-container">
+          <h2>My Projects</h2>
+          <ul id="project-list">
+            <li data-target="sample1">Workout Timer</li>
+            <li data-target="sample2">Boxes</li>
+            <li data-target="sample3">Dwarf Fortress yield calculator</li>
+            <li data-target="sample4">Football Scores</li>
+          </ul>
+        </div>
+
+        <div id="project-img-container">
+          <img src="img/1.svg" alt="sample 1" id="sample1" />
+          <img src="img/2.svg" alt="sample 2" id="sample2" />
+          <img src="img/3.svg" alt="sample 3" id="sample3" />
+          <img src="img/4.svg" alt="sample 4" id="sample4" />
+        </div>
       </section>
       <section id="skills">
         <h2>My Skills</h2>
